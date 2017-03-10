@@ -4,13 +4,13 @@
     <div class="wrap">
         <div class="col six">
             <h2>NÓRSKO </h2>
-            <p>V roku 2016 som sa vybral na cestu ktorou som śi chcel dokázať ,že dokážem prejsť v NÓRKSKU stanovenú trasu ktorú som dlhodobo plánoval trvalo mi to 21dní.</p>
+            <p>V roku 2016 som sa vybral na cestu ktorou som si chcel dokázať ,že prejdem v NÓRKSKU stanovenú trasu ktorú som dlhodobo plánoval trvalo mi to 21dní.</p>
             <p>
                 <a href="stranka1.php" class="button">Čítaj viac</a>
             </p>
         </div>
         <div class="col six">
-            <img src="img/4.3.jpg" alt="sport" style="width:80%;height:80%" />
+            <img src="img/4.3.jpg" alt="sport" alt="sport" class="responsive" />
         </div>
     </div>
 </section>
@@ -18,7 +18,7 @@
 <section class="">
     <div class="wrap">
         <div class="col six">
-            <img src="img/4.2.jpg" alt="sport" style="width:80%;height:80%" />
+            <img src="img/4.2.jpg" alt="sport" class="responsive" />
         </div>
         <div class="col six">
             <h2>Príprava</h2>
@@ -40,7 +40,7 @@
             </p>
         </div>
         <div class="col six">
-            <img src="img/0.1.jpg" alt="sport" style="width:60%;height:80%" />
+            <img src="img/0.1.jpg" alt="sport"  class="responsive" />
         </div>
     </div>
 </section>

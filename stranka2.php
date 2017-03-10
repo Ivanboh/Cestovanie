@@ -10,7 +10,7 @@
         
       </div>
       <div class="col six">
-          <img src="img/2.1.jpg" alt="sport" style="width:40%;height:60%" />
+          <img src="img/2.1.jpg" style="width:40%;height:70%" />
       </div>
     </div>
   </section>
@@ -18,7 +18,7 @@
   <section class="">
     <div class="wrap">
       <div class="col six">
-          <img src="img/2.2.jpg" alt="sport" style="width:60%;height:80%" />
+          <img src="img/2.2.jpg" alt="sport" style="width:60%;height:90%" />
       </div>
       <div class="col six">
         <h2>Strava</h2>
