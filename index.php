@@ -1,3 +1,5 @@
+<html>
+ <body>
 <?php include 'header.php'; ?>
 
 <section class="bg-blue white">
@@ -52,3 +54,5 @@
 
 
 <?php include 'footer.php'; ?>
+</body>
+</html>
