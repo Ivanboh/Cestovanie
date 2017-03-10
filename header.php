@@ -14,7 +14,7 @@
         <a href="stranka1.php">NÓRSKO</a>
         <a href="stranka2.php">Príprava</a>
         <a href="stranka3.php">Cesta</a>
-        <a href="feedback.php">Správa</a>
+        <a href="feedback.php"></a>
         
       </nav>
     </div>
