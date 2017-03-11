@@ -1,43 +1,36 @@
 <?php
-  function injects_safe($string) {
-    return mysql_real_escape_string($string);
-  }
+  //function injects_safe($string) {
+  //  return mysql_real_escape_string($string);
+  //}
 
-  function results_assoc($result) {
-    $tmp = Array();
-    while($row = mysql_fetch_assoc($result)) {
-      array_push($tmp, $row);
-    }
-    return $tmp;
-  }
+  //function results_assoc($result) {
+  //  $tmp = Array();
+  //  while($row = mysql_fetch_assoc($result)) {
+  //    array_push($tmp, $row);
+  //  }
+  //  return $tmp;
+  //}
+  //riesil som z domu
+ $servername = "localhost";
+$username = "root";
+$password = "";
 
-  $dbhost = "localhost";
-  $dbusername = "cestovanie";
-  $dbpassword = "cestovanie";
-  $dbname = "cestovanie";
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
-  $conn = mysql_connect($dbhost, $dbusername, $dbpassword);
-  if (!$conn) {
-    return false;
-    die("MYSQL ERROR >> ".mysql_error());
-  }
-  mysql_select_db($dbname,$conn);
+// Create database
+$sql = "CREATE DATABASE myDB";
+if ($conn->query($sql) === TRUE) {
+    echo "Database created successfully";
+} else {
+    echo "Error creating database: " . $conn->error;
+}
 
-  if (isset($_POST['feedback'])) {
-    $nick = injects_safe($_POST['nick']);
-    $email = injects_safe($_POST['email']);
-    $text = injects_safe($_POST['message']);
-    $my_date = date("Y-m-d H:i:s");
-    $sql = "INSERT INTO feedback ("
-      . "nick, email, message, date_time"
-      . " ) VALUES ('"
-      . $nick."','"
-      . $email."','"
-      . $text."', '".$my_date."')";
-    // echo $sql;
-    mysql_query($sql, $conn);
-  /*  header('Location: feedback.php');
-    exit;   */
+$conn->close();
   }
 ?>
 <?php include 'header.php'; ?>
